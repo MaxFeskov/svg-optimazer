@@ -1,0 +1,19 @@
+{
+  "name": "svgo-optimazer",
+  "version": "1.0.0",
+  "description": "Use svgo with custom config",
+  "main": "index.js",
+  "scripts": {
+    "clean": "npx rimraf -f build",
+    "svgo": "svgo -f ./src/ -r -o build --config=.svgo.yml",
+    "minify": "npm run clean && npm run svgo -- --quiet",
+    "prettify": "npm run clean && npm run svgo -- --quiet --pretty",
+    "zip": "npm run minify"
+  },
+  "author": "MirkFM",
+  "license": "ISC",
+  "dependencies": {
+    "rimraf": "^3.0.2",
+    "svgo": "^1.3.2"
+  }
+}

@@ -1,0 +1,20 @@
+* text eol=lf
+
+src/* linguist-vendored
+
+## SOURCE CODE
+*.json     text
+
+## DOCUMENTATION
+*.md         text
+
+## CONFIGS
+.editorconfig        text
+.gitattributes       text
+.gitconfig           text
+.gitignore           text
+*.yml                text
+
+## GRAPHICS
+*.svg  binary
+*.svgz binary
